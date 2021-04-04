@@ -1,5 +1,4 @@
 import * as React from 'react';
-import icon from '../images/open_link.svg';
 
 // styles
 const pageStyles = {
@@ -42,9 +41,10 @@ const linkStyle = {
   verticalAlign: '5%',
 };
 
-const docLinkStyle = {
+const subHeader = {
   ...linkStyle,
   listStyleType: 'none',
+  marginTop: 10,
   marginBottom: 24,
 };
 
@@ -54,12 +54,6 @@ const descriptionStyle = {
   marginTop: 10,
   marginBottom: 0,
   lineHeight: 1.25,
-};
-
-const docLink = {
-  text: 'Documentation',
-  url: 'https://www.gatsbyjs.com/docs/',
-  color: '#8954A8',
 };
 
 const badgeStyle = {
@@ -89,6 +83,34 @@ const links = [
     color: '#E95800',
     codebase: 'https://github.com/patrickvrb/spaceX-launches',
   },
+  {
+    text: 'Nanum Coreano',
+    url: 'https://nanumcoreano.com.br/',
+    description:
+      'Wordpress website I made as a freelancer for a dear friend. The reason I chose to go with Wordpress framework was to facilitate future blog and content \
+      updates made by herself, rather than depending on someone who knows web development to do so. It was my first real experience with web development being paid, \
+      and also pairing with a UX designer using FIGMA as her prototyping software.',
+    color: '#1099A8',
+  },
+  {
+    text: 'Igor',
+    description:
+      'Flutter application for supporting RPG playing sessions. The Bloc library was implemented to manage the app state so that \
+      the whole application knows its state, no matter where it is, enabling a simple and overall better code & state understanding. As a hybrid app, \
+      I had the challenge to fit page elements on multiple mobile screen sizes, so I learned how to set those measures based on the context, using MediaQuery. \
+      Other features I implemented were saving dice rolled numbers on each session and data persistence over Firebase.',
+    color: '#BC027F',
+    codebase: 'https://github.com/bololo21/igor_app',
+  },
+  {
+    text: 'Meau',
+    description:
+      'Flutter application simulating a pet adoption center, where you can also help stray or adoption pets. \
+      When building this application, I learned how to properly communicate with Firebase to persist and fetch de application data needed. \
+      Also learned how to design on widget oriented screens, preserving secure UI zones blocking user interaction, and Firebase role based authentication.',
+    color: '#0D96F2',
+    codebase: 'https://github.com/clararabello/meau_app',
+  },
 ];
 
 // markup
@@ -97,21 +119,42 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Patrick Beal - about me</title>
       <h1 style={headingStyles}>
-        Patrick Vitas Reguera Beal
+        Patrick V. R. Beal
         <br />
         <span style={headingAccentStyles}>— Software Engineer </span>
+        <br />
+        <div style={subHeader}>patrickvrb@gmail.com</div>
       </h1>
+      <strong>
+        Passionate about learning. Motivated by making lives easier.
+      </strong>
+      <br />
+      <br />
       <div>
         Currently working as Full Time Front-End Software Engineer @
-        <a href='http://www.foton.la/' target='_blank' rel='noreferrer'>
+        <a
+          style={{ color: '#8954A8' }}
+          href='http://www.foton.la/'
+          target='_blank'
+          rel='noreferrer'
+        >
           Fóton
         </a>{' '}
         for the business and bank market.{' '}
       </div>
       <br />
       <div>
-        Here you can find some of my side projects. Most of them I had interest
-        in learning a specific framework or architecture.
+        Here you can find some of my side projects, all hosted on my{' '}
+        <a
+          style={{ color: '#8954A8' }}
+          href='github.com/patrickvrb'
+          target='_blank'
+          rel='noreferrer'
+        >
+          GitHub
+        </a>
+        . Most of them I had interest in learning a specific framework or
+        architecture.
       </div>
       <br />
       <div>
@@ -131,7 +174,7 @@ const IndexPage = () => {
                 rel='noreferrer'
               >
                 {link.text}
-                <img src={icon} color='#663399' />
+                {/* <img src={icon} color='#663399' /> */}
               </a>
               {link.badge && (
                 <span style={badgeStyle} aria-label='New Badge'>
