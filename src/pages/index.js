@@ -78,8 +78,8 @@ const links = [
     text: 'SpaceX Dashboard',
     url: 'https://patrickvrb.github.io/spaceX-launches/',
     description:
-      "React application fetching some rocket lanuches information from SpaceX's public API. I developed this project to learn more about React Hooks. \
-            I found extremely useful the new hook's way of changing the application state. Paired with a good React documentation, the learning process was taken with ease.",
+      "React application fetching some rocket launches information from SpaceX's public API. I developed this project to learn more about React Hooks. \
+            I found extremely useful the new hook's way of changing the application state. Paired with good React documentation, the learning process was taken with ease.",
     color: '#E95800',
     codebase: 'https://github.com/patrickvrb/spaceX-launches',
   },
@@ -107,7 +107,7 @@ const links = [
     description:
       'Flutter application simulating a pet adoption center, where you can also help stray or adoption pets. \
       When building this application, I learned how to properly communicate with Firebase to persist and fetch de application data needed. \
-      Also learned how to design on widget oriented screens, preserving secure UI zones blocking user interaction, and Firebase role based authentication.',
+      Also learned how to design on widget-oriented screens, preserving secure UI zones blocking user interaction, and Firebase role based authentication.',
     color: '#0D96F2',
     codebase: 'https://github.com/clararabello/meau_app',
   },
@@ -131,18 +131,21 @@ const IndexPage = () => {
       <br />
       <br />
       <div>
-        Currently working as Full Time Front-End Software Engineer @
+        Currently working full-time as Fullstack Software Engineer @
         <a
           style={{ color: '#8954A8' }}
-          href='http://www.foton.la/'
+          href='https://www.take.net'
           target='_blank'
           rel='noreferrer'
         >
-          Fóton
-        </a>{' '}
-        for the business and bank market.{' '}
+          Take Blip
+        </a>.
       </div>
       <br />
+      <div>
+        Allocated in Research and Development tribe, my responsibilities are focused on developing the new SaaS product directed at smaller businesses. The goal is to bring closer together 
+        brands and costumer, providing great experiences on WhatsApp and Instagram.
+      </div>
       <div>
         Here you can find some of my side projects, all hosted on my{' '}
         <a
@@ -153,13 +156,13 @@ const IndexPage = () => {
         >
           GitHub
         </a>
-        . Most of them I had interest in learning a specific framework or
+        . Most of them I had an interest in learning a specific framework or
         architecture.
       </div>
       <br />
       <div>
         My main source of motivation to learn those subjects were Medium and
-        Linkedin newslatters about emerging software innovation.{' '}
+        Linkedin newsletters about emerging software innovation.
       </div>
       <br />
 
