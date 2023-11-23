@@ -116,6 +116,7 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
+    <>
     <meta name="facebook-domain-verification" content="89gd3wc4fbah0pw618i3rwc3f13kec" />
     <main style={pageStyles}>
       <title>Patrick Beal - about me</title>
@@ -201,6 +202,7 @@ const IndexPage = () => {
         ))}
       </ul>
     </main>
+  </>
   );
 };
 
